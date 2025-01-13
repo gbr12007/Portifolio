@@ -35,6 +35,7 @@ body.dark, #home.dark{
     display: flex;
     align-items: center;
     cursor: pointer;
+    transition: .5s;
 }
 .trilha .bola{
     width: 40px;
