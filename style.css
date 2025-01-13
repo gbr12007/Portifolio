@@ -29,7 +29,7 @@ body.dark, #home.dark{
     position: absolute;
     width: 90px;
     height: 45px;
-    background: rgb(173, 173, 173);
+    background: rgb(8, 8, 8);
     right: 10px;
     top: 15px;
     border-radius: 30px;
@@ -37,12 +37,24 @@ body.dark, #home.dark{
     align-items: center;
     cursor: pointer;
     transition: .5s;
+    border: 2px solid rgb(255, 255, 255);
+}
+.trilha p{
+    color:  white;
+    position: absolute;
+    right: 10px;
+    transition: .5s;
+}
+.trilha.dark p{
+    color: black;
+    position: absolute;
+    right: 40px;
 }
 .trilha .bola{
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    background: rgb(96, 96, 96);
+    background: rgb(173, 173, 173);
     position: absolute;
     left: 0;
     transition: .5s;
@@ -52,16 +64,29 @@ body.dark, #home.dark{
     background: linear-gradient(90deg, rgb(0, 33, 72), #202e3b);
 }
 .trilha.dark{
-    background: rgb(42, 42, 42);
+    background: rgb(255, 254, 254);
+    border: 2px solid rgb(0, 208, 250);
 }
 .trilha.dark .bola{
     left: 50px;
-    background: rgb(194, 194, 194);
+    background: linear-gradient(to right, orange, rgb(255, 255, 77));
 }
 .social.dark{
     background: rgb(2, 31, 67);
 }
-
+.bola::after{
+    content: '';
+    width: 40px;
+    height: 35px;
+    position: absolute;
+    right: -10px;
+    border-radius: 50%; 
+    background: rgb(8, 8, 8);
+    transition: .5s;
+}
+.bola.no-after::after{
+    content: none;
+}
 .name{
     display: flex;
     text-align: center;
@@ -125,7 +150,8 @@ body.dark, #home.dark{
     max-width: 50% ;
     justify-content:space-around;
     align-items: center;
-    background: white;
+    background: rgb(239, 239, 239);
+    border: 5px solid rgb(97, 150, 145);
 }
 .social img{
     display: block;
