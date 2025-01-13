@@ -18,6 +18,7 @@ body{
     text-align: center;
     border-radius: 30px;
     background: linear-gradient(90deg, #00feba, #5b548a);
+    transition: .3s;
 }
 body.dark, #home.dark{
     background: rgba(0, 0, 0, 0.827);
@@ -47,12 +48,18 @@ body.dark, #home.dark{
     transition: .5s;
     transform: scale(0.9);
 }
+.nav.dark{
+    background: linear-gradient(90deg, rgb(0, 33, 72), #202e3b);
+}
 .trilha.dark{
     background: rgb(42, 42, 42);
 }
 .trilha.dark .bola{
     left: 50px;
     background: rgb(194, 194, 194);
+}
+.social.dark{
+    background: rgb(2, 31, 67);
 }
 
 .name{
@@ -100,7 +107,7 @@ body.dark, #home.dark{
 .name{
     font-size: 100px;
     font-weight: 1000;
-    color: linear-gradient(35deg, black, white);
+    color: white;
 }
 .text{
     font-size: 50px;
@@ -110,16 +117,20 @@ body.dark, #home.dark{
     line-height: 70px;
 }
 .social{
+    margin-top: 15px;
+    padding: 15px;
+    width: 900px;
+    border-radius: 15px;
     display: flex;
     max-width: 50% ;
-    justify-content:flex-start;
+    justify-content:space-around;
     align-items: center;
+    background: white;
 }
 .social img{
+    display: block;
     width: 60px;
     height: 60px;
-    border-radius: 50%;
-    opacity: 0.7;
 }
 #about{
     height: 100vh;
