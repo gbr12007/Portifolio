@@ -4,6 +4,7 @@
 }
 body{
    font-family: sans-serif;
+   background: white;
 }
     
 #home{
@@ -20,6 +21,8 @@ body{
 }
 body.dark, #home.dark{
     background: rgba(0, 0, 0, 0.827);
+    transition: .5s;
+
 }
 .trilha{
     position: absolute;
@@ -43,8 +46,12 @@ body.dark, #home.dark{
     transition: .5s;
     transform: scale(0.9);
 }
+.trilha.dark{
+    background: rgb(42, 42, 42);
+}
 .trilha.dark .bola{
     left: 50px;
+    background: rgb(194, 194, 194);
 }
 
 .name{
