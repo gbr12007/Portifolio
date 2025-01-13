@@ -18,6 +18,34 @@ body{
     border-radius: 30px;
     background: linear-gradient(90deg, #00feba, #5b548a);
 }
+body.dark, #home.dark{
+    background: rgba(0, 0, 0, 0.827);
+}
+.trilha{
+    position: absolute;
+    width: 90px;
+    height: 45px;
+    background: rgb(173, 173, 173);
+    right: 10px;
+    top: 15px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.trilha .bola{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: rgb(96, 96, 96);
+    position: absolute;
+    left: 0;
+    transition: .5s;
+    transform: scale(0.9);
+}
+.trilha.dark .bola{
+    left: 50px;
+}
 
 .name{
     display: flex;
