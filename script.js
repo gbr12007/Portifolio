@@ -6,10 +6,11 @@ const social = document.querySelector('.social');
 const modeDark = document.querySelector('.trilha p');
 
 function trocarModo(){
-    modeDark.innerText = modeDark.innerText === 'Light' ? 'Dark' : 'Light';
+    modeDark.innerText = modeDark.innerText === 'Dark' ? 'Light' : 'Dark';
 }
 
 trilha.addEventListener('click', ()=>{
+    bola.classList.toggle('dark');
     trocarModo();
     bola.classList.toggle('no-after');
     trilha.classList.toggle('dark');
